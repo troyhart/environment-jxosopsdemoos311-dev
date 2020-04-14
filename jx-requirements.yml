@@ -3,21 +3,30 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/troyhart/environment-jxosopsdemoos311-dev.git
 cluster:
+  clusterName: jxosopsdemoos311
+  devEnvApprovers:
+  - troyhart
+  - irobertson
+  - jasonholmberg
+  - svanderveen777
+  environmentGitOwner: troyhart
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
   provider: openshift
+  registry: docker-registry.default.svc:5000
 environments:
 - ingress:
-    domain: ""
+    domain: 10.1.18.121.nip.io
     externalDNS: false
-    namespaceSubDomain: ""
+    namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
   key: dev
+  repository: environment-jxosopsdemoos311-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -27,6 +36,7 @@ environments:
       enabled: false
       production: false
   key: staging
+  repository: environment-jxosopsdemoos311-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -36,9 +46,10 @@ environments:
       enabled: false
       production: false
   key: production
+  repository: environment-jxosopsdemoos311-production
 gitops: true
 ingress:
-  domain: ""
+  domain: 10.1.18.121.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -66,6 +77,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: master
+  ref: v1.0.420
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow

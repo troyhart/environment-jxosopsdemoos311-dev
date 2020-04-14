@@ -1,0 +1,10 @@
+adminUser:
+  password: local:jxosopsdemoos311/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: troy.hart@gmail.com
+  token: local:jxosopsdemoos311/pipelineUser:token
+  username: troyhart
+prow:
+  hmacToken: local:jxosopsdemoos311/prow:hmacToken
