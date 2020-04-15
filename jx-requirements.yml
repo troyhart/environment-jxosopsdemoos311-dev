@@ -15,10 +15,10 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: openshift
-  registry: docker-registry.default.svc:5000
+  registry: docker-registry.default.svc.cluster.local:5000
 environments:
 - ingress:
-    domain: 10.1.18.121.nip.io
+    domain: dxops.myriad.com
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -28,7 +28,7 @@ environments:
   key: dev
   repository: environment-jxosopsdemoos311-dev
 - ingress:
-    domain: ""
+    domain: dxops.myriad.com
     externalDNS: false
     namespaceSubDomain: ""
     tls:
@@ -38,7 +38,7 @@ environments:
   key: staging
   repository: environment-jxosopsdemoos311-staging
 - ingress:
-    domain: ""
+    domain: dxops.myriad.com
     externalDNS: false
     namespaceSubDomain: ""
     tls:
@@ -49,7 +49,7 @@ environments:
   repository: environment-jxosopsdemoos311-production
 gitops: true
 ingress:
-  domain: 10.1.18.121.nip.io
+  domain: dxops.myriad.com
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
