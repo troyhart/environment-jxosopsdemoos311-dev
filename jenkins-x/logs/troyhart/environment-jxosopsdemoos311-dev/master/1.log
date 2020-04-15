@@ -1,26 +1,26 @@
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-6m8l9[0m
-{"level":"warn","ts":1586917180.6441665,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1586917180.646397,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-4xv6q[0m
+{"level":"warn","ts":1586975719.4543445,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586975719.45642,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-4xq29[0m
-{"level":"warn","ts":1586917183.054284,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1586917183.0579555,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-c6mbl[0m
+{"level":"warn","ts":1586975721.739056,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586975721.74082,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-git-source-troyhart-environment-jxosopsdem-ssph2-c88jn[0m
-{"level":"warn","ts":1586917251.2950099,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1586917252.0396988,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/********/environment-**osopsdemoos311-dev.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-git-source-troyhart-environment-jxosopsdem-mptc4-qtg6p[0m
+{"level":"warn","ts":1586975736.1275804,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586975736.9433773,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/********/environment-**osopsdemoos311-dev.git @ v0.0.2 in path /workspace/source"}
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:10237f01d08d4df7b9e7081bcf9b9e8c81687736
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b5c4e94e7e7ec14f15f79c150183c0ec3685326e
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
 Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
 ** boot has only been validated on GKE and EKS, we'd love feedback and contributions for other Kubernetes providers
 Running in Batch Mode, execution will continue
 writing the following to the OWNERS file for the development environment repository:
@@ -59,25 +59,25 @@ Ensuring Helm chart repository https://storage.googleapis.com/chartmuseum.jenkin
 Cluster looks good, you are ready to '** boot' now!
 
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-jx-crds[0m
 Jenkins X CRDs upgraded with success
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-velero[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-velero[0m
 Modified file /workspace/source/systems/velero/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-velero
 lock configmap **-lock-velero created
 Verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: v1.0.420
 cleaning the lock configmap **-lock-velero
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-velero-backups[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-velero-backups[0m
 Modified file /workspace/source/systems/velero-backups/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-velero
 lock configmap **-lock-velero created
 Ignoring templates/default-backup.yaml
-No requirements file: /tmp/**-helm-apply-150474438/velero-backups/requirements.yaml so not checking for missing versions
+No requirements file: /tmp/**-helm-apply-561073509/velero-backups/requirements.yaml so not checking for missing versions
 cleaning the lock configmap **-lock-velero
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-nginx-controller[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-nginx-controller[0m
 Modified file /workspace/source/systems/**ing/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-kube-system
 lock configmap **-lock-kube-system created
@@ -85,9 +85,9 @@ Verifying the helm requirements versions in dir: . using version stream URL: htt
 
 cleaning the lock configmap **-lock-kube-system
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-create-install-values[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-create-install-values[0m
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-external-dns[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-external-dns[0m
 Modified file /workspace/source/systems/external-dns/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-**
 lock configmap **-lock-** created
@@ -96,10 +96,10 @@ Adding missing Helm repo: charts.bitnami.com https://charts.bitnami.com/bitnami
 Successfully added Helm repository charts.bitnami.com.
 cleaning the lock configmap **-lock-**
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-vault[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-vault[0m
 Not attempting to boot Vault as using secret storage: local
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-create-helm-values[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-create-helm-values[0m
 defaulting to secret storage scheme local found from requirements file at /workspace/source/**-requirements.yml
 defaulting to secret base path to the cluster name **osopsdemoos311 found from requirements file at /workspace/source/**-requirements.yml
 generated schema file /workspace/source/env/parameters.schema.json from template /workspace/source/env/parameters.tmpl.schema.json
@@ -111,18 +111,18 @@ Pipeline bot Git token *** [Automatically accepted existing value]
 HMAC token, used to validate incoming webhooks. Press enter to use the generated token *** [Automatically accepted existing value]
 Do you want to configure an external Docker Registry? false [Automatically accepted existing value]
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-create-jx-auth-config[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-create-jx-auth-config[0m
 Saved the rendered configuration into templates/**-auth-configmap.yaml file
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-jx-auth-config[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-jx-auth-config[0m
 Modified file /workspace/source/systems/**-auth/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-**
 lock configmap **-lock-** created
 Ignoring templates/**-auth-configmap.yaml
-No requirements file: /tmp/**-helm-apply-723221422/**-auth/requirements.yaml so not checking for missing versions
+No requirements file: /tmp/**-helm-apply-920324065/**-auth/requirements.yaml so not checking for missing versions
 cleaning the lock configmap **-lock-**
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-jenkins-x[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-jenkins-x[0m
 Modified file /workspace/source/env/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-**
 lock configmap **-lock-** created
@@ -134,7 +134,7 @@ Successfully added Helm repository chartmuseum.jenkins-x.io.
 
 cleaning the lock configmap **-lock-**
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-verify-jenkins-x-environment[0m
 Storing the requirements in team settings in the dev environment
 Validating git repository for dev environment at URL https://github.com/********/environment-**osopsdemoos311-dev.git
 Validating git repository for production environment at URL https://github.com/********/environment-**osopsdemoos311-production.git
@@ -156,21 +156,22 @@ Pushed Git repository to https://github.com/********/environment-**osopsdemoos31
 Environment git repositories look good
 
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-repositories[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-repositories[0m
 Modified file /workspace/source/repositories/Chart.yaml to set the chart to version 1
 creating the lock configmap **-lock-**
 lock configmap **-lock-** created
 Ignoring templates/default-group.yaml
-No requirements file: /tmp/**-helm-apply-754339383/repositories/requirements.yaml so not checking for missing versions
+Ignoring templates/********-**osos311-demo1-sr.yaml
+No requirements file: /tmp/**-helm-apply-164149353/repositories/requirements.yaml so not checking for missing versions
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 
 cleaning the lock configmap **-lock-**
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-install-pipelines[0m
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-update-webhooks[0m
 DEBUG: Finding service url for hook in namespace **
 DEBUG: Found service url https://hook-**.dxops.myriad.com
 Updating webhooks for Owner: ******** and Repository: environment-**osopsdemoos311-dev in git server: https://github.com
@@ -182,33 +183,34 @@ Creating GitHub webhook for ********/environment-**osopsdemoos311-production for
 Updating webhooks for Owner: ******** and Repository: environment-**osopsdemoos311-staging in git server: https://github.com
 Checking hooks for repository ********/environment-**osopsdemoos311-staging with user ********
 Creating GitHub webhook for ********/environment-**osopsdemoos311-staging for url https://hook-**.dxops.myriad.com/hook
+Updating webhooks for Owner: ******** and Repository: **osos311-demo1 in git server: https://github.com
+Checking hooks for repository ********/**osos311-demo1 with user ********
+Creating GitHub webhook for ********/**osos311-demo1 for url https://hook-**.dxops.myriad.com/hook
 
-Showing logs for build [32mtroyhart-environment-jxosopsdem-ssph2-1[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
+Showing logs for build [32mtroyhart-environment-jxosopsdem-mptc4-1[0m stage [32mrelease[0m and container [32mstep-verify-installation[0m
 verifying the Jenkins X installation in namespace **
 verifying pods
 Checking pod statuses
 POD                                          STATUS
-crier-646cd577f4-f97kk                       Running
-deck-7594bd94bd-hxh4w                        Running
-deck-7594bd94bd-z9mqr                        Running
-hook-7f6d8f7c5b-6nlkn                        Running
-hook-7f6d8f7c5b-htxg8                        Running
-horologium-7844c554f-9x4z4                   Running
-jenkins-5569d8c4c-jmckn                      Running
-jenkins-x-chartmuseum-5687695d57-j9mkm       Running
-jenkins-x-controllerbuild-796484b6ff-p4c6z   Running
-jenkins-x-controllerrole-748b94c74c-zg6xs    Running
-jenkins-x-docker-registry-7b56b4f555-skc55   Running
-jenkins-x-gcactivities-1586914200-58w5g      Succeeded
-jenkins-x-gcactivities-1586916000-rqn8w      Succeeded
-jenkins-x-gcpods-1586914200-rdmnp            Succeeded
-jenkins-x-gcpods-1586916000-kcx44            Succeeded
-jenkins-x-heapster-85cc7b84cb-bhlx2          Running
-jenkins-x-nexus-dd4648854-dlc99              Running
-pipeline-76579fc99d-nntxs                    Running
-pipelinerunner-99f76ccb-gj6mv                Running
-tekton-pipelines-controller-665d7cb865-6pg5s Running
-tide-65b94bfc77-pvvpj                        Running
+crier-646cd577f4-sz47j                       Running
+deck-7594bd94bd-msg2m                        Running
+deck-7594bd94bd-st4lg                        Running
+hook-7f6d8f7c5b-4b9nq                        Running
+hook-7f6d8f7c5b-vg7wg                        Running
+horologium-7844c554f-xcb7j                   Running
+jenkins-5569d8c4c-56qjw                      Running
+jenkins-x-chartmuseum-5687695d57-8qbs5       Running
+jenkins-x-controllerbuild-796484b6ff-xhrbj   Running
+jenkins-x-controllerrole-748b94c74c-q6ftg    Running
+jenkins-x-docker-registry-7b56b4f555-8x79s   Running
+jenkins-x-gcactivities-1586975400-rqphl      Succeeded
+jenkins-x-gcpods-1586975400-cgbts            Succeeded
+jenkins-x-heapster-85cc7b84cb-gcf4f          Running
+jenkins-x-nexus-dd4648854-929zl              Running
+pipeline-76579fc99d-xkrzk                    Running
+pipelinerunner-99f76ccb-vs5kt                Running
+tekton-pipelines-controller-665d7cb865-6s644 Running
+tide-65b94bfc77-tdc72                        Running
 Verifying the git config
 Verifying username ******** at git server github at https://github.com
 Found 1 organisations in git server https://github.com: myriadgenetics
