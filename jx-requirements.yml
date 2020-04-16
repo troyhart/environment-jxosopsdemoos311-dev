@@ -19,7 +19,7 @@ cluster:
 environments:
 - ingress:
     domain: dxops.myriad.com
-    externalDNS: false
+    externalDNS: true
     namespaceSubDomain: -jx.
     tls:
       email: ""
@@ -29,7 +29,7 @@ environments:
   repository: environment-jxosopsdemoos311-dev
 - ingress:
     domain: dxops.myriad.com
-    externalDNS: false
+    externalDNS: true
     namespaceSubDomain: ""
     tls:
       email: ""
@@ -39,7 +39,7 @@ environments:
   repository: environment-jxosopsdemoos311-staging
 - ingress:
     domain: dxops.myriad.com
-    externalDNS: false
+    externalDNS: true
     namespaceSubDomain: ""
     tls:
       email: ""
@@ -50,7 +50,7 @@ environments:
 gitops: true
 ingress:
   domain: dxops.myriad.com
-  externalDNS: false
+  externalDNS: true
   namespaceSubDomain: -jx.
   tls:
     email: ""
