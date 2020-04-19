@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/troyhart/jxosos311-demo2.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: troyhart
+  repo: jx-sd1
+  url: https://github.com/troyhart/jx-sd1.git
+  version: ""
+  versionURL: ""
