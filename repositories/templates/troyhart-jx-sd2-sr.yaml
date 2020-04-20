@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: troyhart
+    provider: github
+    repository: jx-sd2
+  name: troyhart-jx-sd2
+spec:
+  description: Imported application for troyhart/jx-sd2
+  httpCloneURL: https://github.com/troyhart/jx-sd2.git
+  org: troyhart
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-sd2
+  scheduler:
+    kind: ""
+    name: ""
+  url: git@github.com:troyhart/jx-sd2.git
