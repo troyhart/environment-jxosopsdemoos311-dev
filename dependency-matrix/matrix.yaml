@@ -23,3 +23,9 @@ dependencies:
   url: https://github.com/troyhart/jx-sd2.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: troyhart
+  repo: bloxlet-coral-config
+  url: https://github.com/troyhart/bloxlet-coral-config.git
+  version: ""
+  versionURL: ""
