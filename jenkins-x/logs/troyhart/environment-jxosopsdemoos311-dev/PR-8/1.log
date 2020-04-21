@@ -1,0 +1,72 @@
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-wv7xs[0m
+{"level":"warn","ts":1587509762.2291312,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587509762.2312963,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-qkdrg[0m
+{"level":"warn","ts":1587509763.1734095,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587509763.1764917,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-troyhart-environment-jxosopsdem-f2sp5-5j8pj[0m
+{"level":"warn","ts":1587509769.4773617,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1587509770.3117259,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/********/environment-**osopsdemoos311-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:18ba84f745b544f981cc999fcc7cbde6a8af6d26,8:c6eb59284351cd57bb02928cc00aaa0a14f1ba8c
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git fetch origin --unshallow c6eb59284351cd57bb02928cc00aaa0a14f1ba8c: 18ba84f745b544f981cc999fcc7cbde6a8af6d26:
+DEBUG: ran git fetch --unshallow origin c6eb59284351cd57bb02928cc00aaa0a14f1ba8c: 18ba84f745b544f981cc999fcc7cbde6a8af6d26: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 18ba84f745b544f981cc999fcc7cbde6a8af6d26
+DEBUG: ran git reset --hard 18ba84f745b544f981cc999fcc7cbde6a8af6d26 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge c6eb59284351cd57bb02928cc00aaa0a14f1ba8c
+DEBUG: ran git merge c6eb59284351cd57bb02928cc00aaa0a14f1ba8c in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 18ba84f745b544f981cc999fcc7cbde6a8af6d26..HEAD
+Merged SHA c6eb59284351cd57bb02928cc00aaa0a14f1ba8c with commit message 'chore(deps): bump https://github.com/********/bloxlet-coral-config.git' into base branch master
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+
+Showing logs for build [32mtroyhart-environment-jxosopsdem-f2sp5-1[0m stage [32mpr-checks[0m and container [32mstep-lint-env-helm[0m
+rm -rf charts
+rm -rf requirements.lock
+helm init --client-only
+Creating /builder/home/.helm 
+Creating /builder/home/.helm/repository 
+Creating /builder/home/.helm/repository/cache 
+Creating /builder/home/.helm/repository/local 
+Creating /builder/home/.helm/plugins 
+Creating /builder/home/.helm/starters 
+Creating /builder/home/.helm/cache/archive 
+Creating /builder/home/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Adding local repo with URL: http://127.0.0.1:8879/charts 
+$HELM_HOME has been configured at /builder/home/.helm.
+Not installing Tiller due to 'client-only' flag having been set
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+** step helm build --boot --provider-values-dir=../kubeProviders
+WARNING: could not find a git repository in the directory .: No git conf dir found
+Ignoring templates/.gitignore
+Applying the kubernetes overrides at ../kubeProviders/openshift/values.tmpl.yaml
+Verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: v1.0.420
+Wrote chart values.yaml values.yaml generated from directory tree
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+helm lint .
+==> Linting .
+Lint OK
+
+1 chart(s) linted, no failures
