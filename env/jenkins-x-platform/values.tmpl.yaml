@@ -74,7 +74,7 @@ PipelineSecrets:
                     <id>nexus</id>
                     <name>nexus mirror</name>
                     <mirrorOf>external:*</mirrorOf>
-                    <url>http://nexus/repository/maven-group/</url>
+                    <url>https://nexus-jx.dxops.myriad.com/repository/maven-group/</url>
                 </mirror>
               </mirrors>
 {{- end }}
